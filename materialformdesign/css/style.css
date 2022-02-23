@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f64eb;
+    color:#fff;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-control{
+    width: 300px;
+    /*top right bottom */
+    margin:20px 0 40px;
+    position: relative;
+}
+
+.form-control .input{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border:0;
+    /* transparent ?? ဒိုးရိုပေါက် */
+    background-color: transparent;
+
+    border-bottom: 2px solid white;
+    color:#fff;
+}
+
+.form-control .input:focus{
+    outline: 0;
+    border-bottom-color: #3EDBF0;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    background-color:#3EDBF0;
+    border: 0;     
+    /* none = 0  */
+    border-radius: 5px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #3EDBF0;
+}
+
+.form-control label{
+    position: absolute;
+    left: 0;
+    top:15px;
+}
+
+.form-control label span{
+    font-size: 18px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    transform: translateY(-30px);
+    color:#3EDBF0;
+}
+

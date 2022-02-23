@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+h2{
+    position: absolute;
+    top:10px;
+}
+
+.range-container{
+    position: relative;
+}
+
+input[type="range"]{
+    width: 300px;
+    margin: 15px 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*For Chrome & Safri runnable-track*/
+input[type="range"]::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 10px;
+    background-color: mediumpurple;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*For Chrome & Safri = slider thumb*/
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid mediumpurple;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+/*For FireFox = range-track*/
+input[type="range"]::-moz-range-track{
+    width: 100%;
+    height: 10px;
+    background-color: mediumpurple;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*For Firefox = range-thumb*/
+input[type="range"]::-moz-range-thumb{
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid mediumpurple;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+/*For IE = track*/
+input[type="range"]::-ms-track{
+    width: 100%;
+    height: 10px;
+    background-color: mediumpurple;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*For IE = thumb*/
+input[type="range"]::-ms-thumb{
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid mediumpurple;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+input[type="range"] + label{
+    position: absolute;
+    top:-25px;
+    left:110px;
+
+    width: 80px;
+    background-color: #fff;
+
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 4px;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+input[type="range"]:focus{
+    outline: 0;
+}
